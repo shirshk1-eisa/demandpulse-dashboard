@@ -61,3 +61,10 @@ export const simulateSafetyStockApi = (riskLevel) =>
 // ===== Models =====
 export const fetchModelPerformance = () => fetchApi('/models/performance');
 export const fetchCategoryPerformance = () => fetchApi('/models/category-performance');
+
+// ===== Data Management =====
+export const updateStock = (sku_id, store_id, new_stock) => 
+  fetchApi('/inventory/update-stock', { method: 'POST', body: JSON.stringify({ sku_id, store_id, new_stock: parseInt(new_stock) }) });
+
+export const uploadSales = (sku_id, sales, date) => 
+  fetchApi('/inventory/upload-sales', { method: 'POST', body: JSON.stringify({ sku_id, sales: parseFloat(sales), date }) });

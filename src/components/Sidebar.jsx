@@ -13,6 +13,7 @@ const navItems = [
   { to: '/reorder', icon: <FiShoppingCart />, label: 'Reorder Workbench' },
   { to: '/what-if', icon: <FiSliders />, label: 'What-If Simulator' },
   { to: '/models', icon: <FiBarChart2 />, label: 'Model Scorecard' },
+  { to: '/data', icon: <FiPackage />, label: 'Data Manager' },
 ];
 
 export default function Sidebar({ collapsed, onToggle }) {

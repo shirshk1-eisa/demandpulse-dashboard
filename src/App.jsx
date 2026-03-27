@@ -9,6 +9,7 @@ import Alerts from './pages/Alerts';
 import Reorder from './pages/Reorder';
 import WhatIf from './pages/WhatIf';
 import ModelPerformance from './pages/ModelPerformance';
+import DataManager from './pages/DataManager';
 
 const PAGE_TITLES = {
   '/': 'Executive Overview',
@@ -18,6 +19,7 @@ const PAGE_TITLES = {
   '/reorder': 'Reorder Workbench',
   '/what-if': 'What-If Simulator',
   '/models': 'Model Scorecard',
+  '/data': 'Data Manager',
 };
 
 function AppContent() {
@@ -56,6 +58,7 @@ function AppContent() {
           <Route path="/reorder" element={<Reorder />} />
           <Route path="/what-if" element={<WhatIf />} />
           <Route path="/models" element={<ModelPerformance />} />
+          <Route path="/data" element={<DataManager />} />
         </Routes>
       </div>
     </div>
