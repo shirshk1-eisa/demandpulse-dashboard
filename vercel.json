@@ -4,9 +4,5 @@
   "framework": "vite",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index.py" }
-  ],
-  "env": {
-    "MONGO_URI": "@mongo-uri",
-    "MONGO_DB_NAME": "demandpulse"
-  }
+  ]
 }
